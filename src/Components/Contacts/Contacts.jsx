@@ -19,6 +19,20 @@ const Contacts = () => {
         );
     };
 
+    function notificationAboutSending() {
+        const input1 = document.getElementById('inputName');
+        const input2 = document.getElementById('inputEmail');
+        const input3 = document.getElementById('inputText');
+        if (input1.value != '' && input2.value != '' && input3.value != '') {
+            input1.value = '';
+            input2.value = '';
+            input3.value = '';
+            alert('Your message has been sent!');
+        } else {
+            return;
+        }
+    }
+
     return (
         <>
             <div id='Contacts__ID' className='Contacts'>
@@ -35,12 +49,12 @@ const Contacts = () => {
                         ></iframe>
                         <form ref={form} onSubmit={sendEmail} className='Contacts__container-inner-form'>
                             <label>Name</label>
-                            <input placeholder='Your name' required type='text' name='user_name' />
+                            <input id='inputName' placeholder='Your name' required type='text' name='user_name' />
                             <label>Email</label>
-                            <input placeholder='Your eMail' required type='email' name='user_email' />
+                            <input id='inputEmail' placeholder='Your eMail' required type='email' name='user_email' />
                             <label>Message</label>
-                            <textarea placeholder='Your message' rows={10} cols={40} required name='message' />
-                            <button type='submit' value='Send'>
+                            <textarea id='inputText' placeholder='Your message' rows={10} cols={40} required name='message' />
+                            <button onClick={() => notificationAboutSending()} type='submit' value='Send'>
                                 Submit
                             </button>
                         </form>
