@@ -64,3 +64,17 @@
 .Content__container-inner button:hover {
     background-color: rgb(237, 245, 83);
 }
+
+@media screen and (max-width: 280px) {
+    .Content__container-inner h2 {
+        font-size: 14px;
+    }
+
+    .Content__container-inner h1 {
+        font-size: 17px;
+    }
+
+    .Content__container-inner p {
+        font-size: 11px;
+    }
+}

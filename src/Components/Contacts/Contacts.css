@@ -1,6 +1,6 @@
 .Contacts {
     width: 100%;
-    height: 100vh;
+    padding: 100px 0;
 }
 
 .Contacts__container {
@@ -57,3 +57,27 @@
 .Contacts__container-inner-form button:hover {
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 400px) {
+    .Contacts__container-inner-form {
+        padding: 12px;
+    }
+    .Contacts__container-inner iframe {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Contacts__container-inner-form {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .Contacts__container-inner-form {
+        width: 170px;
+    }
+}
+
+/* 524px */

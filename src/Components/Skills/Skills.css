@@ -1,6 +1,6 @@
 .Skills {
     width: 100%;
-    height: fit-content; /* Используем 50% высоты видимой области экрана */
+    height: 100%;
     background-color: #87e0ef;
 }
 
@@ -35,5 +35,17 @@
 @media screen and (max-width: 500px) {
     .Skills__inner-item img {
         width: 100px;
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    .Skills__inner-item img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Skills__inner-item img {
+        width: 50px;
     }
 }

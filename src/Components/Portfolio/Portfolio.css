@@ -5,12 +5,17 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    padding: 100px 0;
+    padding-bottom: 200px;
 }
 .Portfolio__container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    height: 100px;
+}
+
+.Portfolio__container h2 {
+    font-size: 50px;
 }
 
 .Portfolio__container-inner {
@@ -19,7 +24,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    height: 93vh;
+    min-height: 100vh;
 }
 
 .Portfolio__container-inner-item {
@@ -44,7 +49,7 @@
 }
 
 .Portfolio__container-inner-item img {
-    width: 300px;
+    width: 100%;
     border-radius: 12px 12px 0 0;
     transition: 0.2s linear;
 }
@@ -63,4 +68,43 @@
 
 .Portfolio__container-inner-item span {
     font-weight: 500;
+}
+
+@media screen and (max-width: 1005px) {
+    .Portfolio__container-inner-item {
+        width: 250px;
+    }
+    .Portfolio__container-inner {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .Portfolio__container-inner-item {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .Portfolio__container-inner-item {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Portfolio__container-inner-item {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 523.5px) {
+    .Portfolio {
+        padding-bottom: 500px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .Portfolio {
+        padding-bottom: 190vh;
+    }
 }

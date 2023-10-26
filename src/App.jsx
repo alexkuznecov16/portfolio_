@@ -25,14 +25,21 @@ function App() {
         };
     }, []);
 
+    const appContainerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+    };
+
     return (
         <>
-            <Header isFixed={isHeaderFixed} />
-            <Content />
-            <Portfolio />
-            <Skills />
-            <Contacts />
-            <Footer />
+            <div className="App__container" style={appContainerStyle}>
+                <Header isFixed={isHeaderFixed} />
+                <Content />
+                <Portfolio />
+                <Skills />
+                <Contacts />
+                <Footer />
+            </div>
         </>
     );
 }
