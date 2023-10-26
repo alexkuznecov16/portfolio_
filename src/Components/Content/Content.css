@@ -1,0 +1,66 @@
+.Content {
+    background-image: linear-gradient(to bottom, #ffffff, #fafafd, #f3f6fb, #eaf2f9, #e1eff6, #d7edf5, #cdeaf2, #c3e8ef, #b5e6ef, #a7e4ef, #98e2ef, #87e0ef);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.Content__container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+}
+
+.Content__container-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.Content__container-inner h2 {
+    color: blueviolet;
+}
+
+.Content__container-inner h1 span {
+    color: crimson;
+}
+
+.Content__container-inner h1 {
+    font-size: 50px;
+}
+
+.Content__container-inner p {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 500px) {
+    .Content__container-inner p {
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+.Content__container-inner button {
+    padding: 8px 12px;
+    border-radius: 7px;
+    border-color: rgb(166, 83, 245);
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s linear;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.Content__container-inner button:hover {
+    background-color: rgb(237, 245, 83);
+}

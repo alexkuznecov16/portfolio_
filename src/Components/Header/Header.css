@@ -1,0 +1,115 @@
+.Header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.Header__container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.Header__container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+}
+
+.Header__container-inner-logo {
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.Header__container-inner-logo:hover {
+    opacity: 0.6;
+}
+.Header__container-inner-logo img {
+    width: 100px;
+}
+
+.Header__container-inner-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.Header__container-inner-nav a {
+    text-decoration: none;
+    color: darkorchid;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+    border-bottom: 2px solid transparent;
+}
+
+.Header__container-inner-nav a:hover {
+    color: darkmagenta;
+    border-color: darkgoldenrod;
+}
+
+.Header__container-inner-contact {
+}
+.Header__container-inner-contact button {
+    padding: 8px 12px;
+    border-radius: 7px;
+    border-color: rgb(166, 83, 245);
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s linear;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.Header__container-inner-contact button:hover {
+    background-color: rgb(166, 83, 245);
+    color: #ffffff;
+}
+
+.openMobileMenu {
+    display: none;
+}
+
+.Header__container-inner__mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    transition: right 0.3s ease-in-out; /* Menu animation */
+}
+
+.Header__container-inner__mobile.active {
+    right: 0; /* Show menu */
+}
+
+.Header__container-inner__mobile-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .openMobileMenu,
+    .Header__container-inner__mobile .Header__container-inner-contact button,
+    .Header__container-inner__mobile .Header__container-inner-nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Header__container-inner-contact button,
+    .Header__container-inner-nav {
+        display: none;
+    }
+}
