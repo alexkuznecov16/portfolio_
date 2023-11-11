@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: fit-content;
 }
 
 .Content__container {

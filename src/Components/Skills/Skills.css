@@ -32,12 +32,6 @@
     transform: scale(1.03);
 }
 
-@media screen and (max-width: 500px) {
-    .Skills__inner-item img {
-        width: 100px;
-    }
-}
-
 @media screen and (max-width: 1005px) {
     .Skills__inner-item img {
         width: 80px;

@@ -11,7 +11,7 @@ const Contacts = () => {
 
         emailjs.sendForm('service_4k0jv09', 'template_l0nnav9', form.current, 'n01yKVaJep3s299ib').then(
             (result) => {
-                console.log(result.text);
+                console.log(result);
             },
             (error) => {
                 console.log(error.text);

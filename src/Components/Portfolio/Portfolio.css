@@ -4,9 +4,8 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
-    padding: 100px 0;
-    padding-bottom: 200px;
+    height: fit-content;
+    padding-bottom: 100px;
 }
 .Portfolio__container {
     max-width: 1000px;
@@ -24,7 +23,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    min-height: 100vh;
 }
 
 .Portfolio__container-inner-item {
@@ -42,10 +40,6 @@
 .Portfolio__container-inner-item:hover {
     transform: scale(1.02);
     background-color: #d0b1ef;
-}
-
-.Portfolio__container-inner-item:hover .Portfolio__container-inner-item-info {
-    color: #fff;
 }
 
 .Portfolio__container-inner-item img {
@@ -94,17 +88,5 @@
 @media screen and (max-width: 550px) {
     .Portfolio__container-inner-item {
         width: 150px;
-    }
-}
-
-@media screen and (max-width: 523.5px) {
-    .Portfolio {
-        padding-bottom: 500px;
-    }
-}
-
-@media screen and (max-width: 346px) {
-    .Portfolio {
-        padding-bottom: 190vh;
     }
 }
