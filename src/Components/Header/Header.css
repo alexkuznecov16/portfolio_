@@ -83,6 +83,10 @@
     transition: right 0.3s ease-in-out; /* Menu animation */
 }
 
+.Header__container-inner__mobile-block span {
+    cursor: pointer;
+}
+
 .Header__container-inner__mobile.active {
     right: 0; /* Show menu */
 }

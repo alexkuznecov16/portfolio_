@@ -36,7 +36,7 @@ const Header = ({ isFixed }) => {
                                 Contact me
                             </button>
                         </div>
-                        <div onClick={toggleMobileMenu} id='openMobile' className={`openMobileMenu ${isMobileMenuOpen ? 'active' : ''}`}>
+                        <div style={{cursor: 'pointer'}} onClick={toggleMobileMenu} id='openMobile' className={`openMobileMenu ${isMobileMenuOpen ? 'active' : ''}`}>
                             Menu
                         </div>
                         <div className={`Header__container-inner__mobile MobileMenu ${isMobileMenuOpen ? 'active' : ''}`}>
