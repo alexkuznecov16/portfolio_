@@ -6,9 +6,17 @@ import MoviesApp_icon from '../../Assets/moviesappImage.png';
 import QuizApp_icon from '../../Assets/quizappImage.png';
 import Timer_icon from '../../Assets/timerappImage.png';
 import WeatherApp_icon from '../../Assets/weatherappImage.png';
+import Kanban_icon from '../../Assets/kanban.png'
 
 const Portfolio = () => {
     const portfolioItems = [
+        {
+            icon: Kanban_icon,
+            title: 'Kanban board',
+            description: 'A simple kanban board with local storage saving.',
+            date: '09.11.2023',
+            url: 'https://github.com/alexkuznecov16/kanban-board',
+        },
         {
             icon: MoviesApp_icon,
             title: 'Movies app',
