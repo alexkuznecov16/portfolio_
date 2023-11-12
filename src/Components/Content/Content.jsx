@@ -1,6 +1,6 @@
 import './Content.css';
 
-import cv_file from '../../Files/RESUME.pdf'
+import cv_file from '../../Files/RESUME-1.pdf'
 
 const Content = () => {
     return (

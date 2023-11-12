@@ -44,7 +44,6 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    user-select: all;
 }
 
 .Contacts__container-inner-form:hover {
@@ -83,6 +82,9 @@
     .Contacts__container-inner iframe {
         width: 200px;
         height: 300px;
+    }
+    .Contacts__container-inner-form:after {
+        font-size: 10px;
     }
 }
 
