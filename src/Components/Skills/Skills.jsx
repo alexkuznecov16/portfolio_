@@ -3,6 +3,7 @@ import './Skills.css';
 // Import images
 import htmlcssjs_icon from '../../Assets/html+css+js.png';
 import sass_icon from '../../Assets/Sass.png';
+import jest_icon from '../../Assets/jest-logo.png'
 import typescript_icon from '../../Assets/typescript.png';
 import react_icon from '../../Assets/React.png';
 import webpack_icon from '../../Assets/webpack.png';
@@ -19,6 +20,9 @@ const Skills = () => {
                     </div>
                     <div className='Skills__inner-item'>
                         <img src={sass_icon} alt='Sass' />
+                    </div>
+                    <div className='Skills__inner-item'>
+                        <img src={jest_icon} alt='Jest' />
                     </div>
                     <div className='Skills__inner-item'>
                         <img src={typescript_icon} alt='TypeScript' />
